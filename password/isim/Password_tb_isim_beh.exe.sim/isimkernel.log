@@ -1,0 +1,10 @@
+Command line:
+   Password_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  4522
+
+Wed Aug 18 00:11:24 2021
+
+
+ Elaboration Time: 0.078125 sec

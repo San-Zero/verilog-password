@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/let02/Documents/let02_WorkSpace/StudyMaterials/Verilog_2/final_exam/password/password/Password_tb_isim_beh.exe" -prj "C:/Users/let02/Documents/let02_WorkSpace/StudyMaterials/Verilog_2/final_exam/password/password/Password_tb_beh.prj" "work.Password_tb" "work.glbl" 

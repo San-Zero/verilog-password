@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompilers" num="258" delta="old" ><arg fmt="%s" index="1">&quot;FSM.v&quot; line 13 </arg>Range on redeclaration of &apos;<arg fmt="%s" index="2">inputCnt</arg>&apos; overrides range on output declaration at <arg fmt="%s" index="3">&quot;FSM.v&quot; line 6 </arg>
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="261" delta="old" ><arg fmt="%s" index="1">&quot;Top.v&quot; line 35 </arg>Connection to output port &apos;<arg fmt="%s" index="2">inputCnt</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="258" delta="old" ><arg fmt="%s" index="1">&quot;FSM.v&quot; line 13 </arg>Range on redeclaration of &apos;<arg fmt="%s" index="2">inputCnt</arg>&apos; overrides range on output declaration at <arg fmt="%s" index="3">&quot;FSM.v&quot; line 6 </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2325" delta="old" >&quot;<arg fmt="%s" index="1">count_down.v</arg>&quot; line <arg fmt="%d" index="2">16</arg>: Unsupported escape sequence : %<arg fmt="%c" index="3">4</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2325" delta="old" >&quot;<arg fmt="%s" index="1">count_down.v</arg>&quot; line <arg fmt="%d" index="2">16</arg>: Unsupported escape sequence : %<arg fmt="%c" index="3">4</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="1433" delta="old" >Contents of array &lt;<arg fmt="%s" index="1">pwdStorage</arg>&gt; may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="2325" delta="old" >&quot;<arg fmt="%s" index="1">set_password.v</arg>&quot; line <arg fmt="%d" index="2">35</arg>: Unsupported escape sequence : %<arg fmt="%c" index="3">4</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2325" delta="old" >&quot;<arg fmt="%s" index="1">set_password.v</arg>&quot; line <arg fmt="%d" index="2">35</arg>: Unsupported escape sequence : %<arg fmt="%c" index="3">4</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2325" delta="old" >&quot;<arg fmt="%s" index="1">set_password.v</arg>&quot; line <arg fmt="%d" index="2">35</arg>: Unsupported escape sequence : %<arg fmt="%c" index="3">4</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2325" delta="old" >&quot;<arg fmt="%s" index="1">set_password.v</arg>&quot; line <arg fmt="%d" index="2">35</arg>: Unsupported escape sequence : %<arg fmt="%c" index="3">4</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2325" delta="old" >&quot;<arg fmt="%s" index="1">set_password.v</arg>&quot; line <arg fmt="%d" index="2">35</arg>: Unsupported escape sequence : %<arg fmt="%c" index="3">4</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2325" delta="old" >&quot;<arg fmt="%s" index="1">FSM.v</arg>&quot; line <arg fmt="%d" index="2">49</arg>: Unsupported escape sequence : %<arg fmt="%c" index="3">4</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2325" delta="old" >&quot;<arg fmt="%s" index="1">FSM.v</arg>&quot; line <arg fmt="%d" index="2">49</arg>: Unsupported escape sequence : %<arg fmt="%c" index="3">4</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2325" delta="old" >&quot;<arg fmt="%s" index="1">FSM.v</arg>&quot; line <arg fmt="%d" index="2">59</arg>: Unsupported escape sequence : %<arg fmt="%c" index="3">4</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2325" delta="old" >&quot;<arg fmt="%s" index="1">FSM.v</arg>&quot; line <arg fmt="%d" index="2">59</arg>: Unsupported escape sequence : %<arg fmt="%c" index="3">4</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2325" delta="old" >&quot;<arg fmt="%s" index="1">FSM.v</arg>&quot; line <arg fmt="%d" index="2">59</arg>: Unsupported escape sequence : %<arg fmt="%c" index="3">4</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2325" delta="old" >&quot;<arg fmt="%s" index="1">FSM.v</arg>&quot; line <arg fmt="%d" index="2">59</arg>: Unsupported escape sequence : %<arg fmt="%c" index="3">4</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2325" delta="old" >&quot;<arg fmt="%s" index="1">FSM.v</arg>&quot; line <arg fmt="%d" index="2">59</arg>: Unsupported escape sequence : %<arg fmt="%c" index="3">4</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2325" delta="old" >&quot;<arg fmt="%s" index="1">FSM.v</arg>&quot; line <arg fmt="%d" index="2">74</arg>: Unsupported escape sequence : %<arg fmt="%c" index="3">4</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2325" delta="old" >&quot;<arg fmt="%s" index="1">FSM.v</arg>&quot; line <arg fmt="%d" index="2">74</arg>: Unsupported escape sequence : %<arg fmt="%c" index="3">4</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2325" delta="old" >&quot;<arg fmt="%s" index="1">lights_control.v</arg>&quot; line <arg fmt="%d" index="2">10</arg>: Unsupported escape sequence : %<arg fmt="%c" index="3">4</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">lights_control.v</arg>&quot; line <arg fmt="%d" index="2">10</arg>: Parameter <arg fmt="%d" index="3">3</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">lights_control.v</arg>&quot; line <arg fmt="%d" index="2">10</arg>: Parameter <arg fmt="%d" index="3">4</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">lights_control.v</arg>&quot; line <arg fmt="%d" index="2">10</arg>: Parameter <arg fmt="%d" index="3">5</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2325" delta="old" >&quot;<arg fmt="%s" index="1">lights_control.v</arg>&quot; line <arg fmt="%d" index="2">16</arg>: Unsupported escape sequence : %<arg fmt="%c" index="3">4</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">lights_control.v</arg>&quot; line <arg fmt="%d" index="2">16</arg>: Parameter <arg fmt="%d" index="3">3</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">lights_control.v</arg>&quot; line <arg fmt="%d" index="2">16</arg>: Parameter <arg fmt="%d" index="3">4</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">lights_control.v</arg>&quot; line <arg fmt="%d" index="2">16</arg>: Parameter <arg fmt="%d" index="3">5</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2325" delta="old" >&quot;<arg fmt="%s" index="1">lights_control.v</arg>&quot; line <arg fmt="%d" index="2">22</arg>: Unsupported escape sequence : %<arg fmt="%c" index="3">4</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">lights_control.v</arg>&quot; line <arg fmt="%d" index="2">22</arg>: Parameter <arg fmt="%d" index="3">3</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">lights_control.v</arg>&quot; line <arg fmt="%d" index="2">22</arg>: Parameter <arg fmt="%d" index="3">4</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">lights_control.v</arg>&quot; line <arg fmt="%d" index="2">22</arg>: Parameter <arg fmt="%d" index="3">5</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2325" delta="old" >&quot;<arg fmt="%s" index="1">lights_control.v</arg>&quot; line <arg fmt="%d" index="2">28</arg>: Unsupported escape sequence : %<arg fmt="%c" index="3">4</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">lights_control.v</arg>&quot; line <arg fmt="%d" index="2">28</arg>: Parameter <arg fmt="%d" index="3">3</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">lights_control.v</arg>&quot; line <arg fmt="%d" index="2">28</arg>: Parameter <arg fmt="%d" index="3">4</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2323" delta="old" >&quot;<arg fmt="%s" index="1">lights_control.v</arg>&quot; line <arg fmt="%d" index="2">28</arg>: Parameter <arg fmt="%d" index="3">5</arg> is not constant in call of system task <arg fmt="%s" index="4">$display</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">column</arg>&gt; in unit &lt;<arg fmt="%s" index="2">keypad</arg>&gt; has a constant value of <arg fmt="%s" index="3">101</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">i</arg>&gt; in unit &lt;<arg fmt="%s" index="2">set_password</arg>&gt; has a constant value of <arg fmt="%s" index="3">100</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">i</arg>&gt; in unit &lt;<arg fmt="%s" index="2">FSM</arg>&gt; has a constant value of <arg fmt="%s" index="3">100</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">count_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">set_password</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_1/divclkcnt_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_1/divclkcnt_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_1/divclkcnt_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_1/divclkcnt_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_1/divclkcnt_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_1/divclkcnt_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_1/divclkcnt_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_1/divclkcnt_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_1/divclkcnt_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_1/divclkcnt_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_1/divclkcnt_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_1/divclkcnt_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_1/divclkcnt_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_1/divclkcnt_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_1/divclkcnt_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_1/divclkcnt_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_1/divclkcnt_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_1/divclkcnt_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_1/divclkcnt_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_1/divclkcnt_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_1/divclkcnt_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_1/divclkcnt_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_1/divclkcnt_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Top</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

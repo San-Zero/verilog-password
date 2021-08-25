@@ -1,0 +1,88 @@
+ISim log file
+Running: C:\Users\let02\Documents\let02_WorkSpace\StudyMaterials\Verilog_2\final_exam\password\password\Password_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/let02/Documents/let02_WorkSpace/StudyMaterials/Verilog_2/final_exam/password/password/Password_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+WARNING: File "C:/Users/let02/Documents/let02_WorkSpace/StudyMaterials/Verilog_2/final_exam/password/password/Top.v" Line 19.  For instance uut/FSM_1/, width 3 of formal port inputCnt is not equal to width 4 of actual signal inputCnt.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+0ns: green=x, red=x, yellow=x
+Finished circuit initialization process.
+55ns: green=0, red=1, yellow=0
+75ns: green=0, red=1, yellow=0
+95ns: pwd0 = x, pwd1 = x, pwd2 = x, pwd3 = x
+95ns: green=0, red=1, yellow=0
+115ns: pwd0 = 2, pwd1 = x, pwd2 = x, pwd3 = x
+115ns: green=0, red=1, yellow=0
+135ns: pwd0 = 2, pwd1 = 5, pwd2 = x, pwd3 = x
+135ns: green=0, red=1, yellow=0
+155ns: pwd0 = 2, pwd1 = 5, pwd2 = 8, pwd3 = x
+155ns: green=0, red=1, yellow=0
+175ns: pwd0 = 2, pwd1 = 5, pwd2 = 8, pwd3 = 0
+175ns: green=0, red=1, yellow=0
+195ns: pwd0 = 2, pwd1 = 5, pwd2 = 8, pwd3 = 0
+195ns: green=0, red=1, yellow=0
+215ns: green=0, red=1, yellow=0
+235ns: green=0, red=1, yellow=0
+255ns: green=0, red=1, yellow=0
+275ns: green=0, red=1, yellow=0
+295ns: green=0, red=1, yellow=0
+315ns: green=0, red=1, yellow=0
+325ns: counter = 5
+335ns: green=0, red=1, yellow=0
+355ns: keyCount = 1
+355ns: green=0, red=1, yellow=0
+375ns: keyCount = 1
+375ns: green=0, red=1, yellow=0
+395ns: green=0, red=1, yellow=0
+405ns: counter = 4
+415ns: keyCount = 2
+415ns: green=0, red=1, yellow=0
+435ns: keyCount = 2
+435ns: green=0, red=1, yellow=0
+455ns: green=0, red=1, yellow=0
+475ns: keyCount = 3
+475ns: green=0, red=1, yellow=0
+485ns: counter = 3
+495ns: keyCount = 3
+495ns: green=0, red=1, yellow=0
+515ns: green=0, red=1, yellow=0
+535ns: keyCount = 4
+535ns: green=0, red=1, yellow=0
+555ns: out0 = 2, out1 = 2, out2 = 8, out3 = 0
+False
+555ns: inputCnt = 1
+555ns: green=0, red=1, yellow=0
+565ns: counter = 2
+575ns: green=0, red=1, yellow=0
+595ns: green=0, red=1, yellow=0
+615ns: green=0, red=1, yellow=0
+635ns: green=0, red=1, yellow=0
+645ns: counter = 2
+655ns: green=0, red=1, yellow=0
+675ns: green=0, red=1, yellow=0
+695ns: green=0, red=1, yellow=0
+715ns: green=0, red=1, yellow=0
+725ns: counter = 2
+735ns: green=0, red=1, yellow=0
+755ns: green=0, red=1, yellow=0
+775ns: green=0, red=1, yellow=0
+795ns: green=0, red=1, yellow=0
+805ns: counter = 2
+815ns: green=0, red=1, yellow=0
+835ns: green=0, red=1, yellow=0
+855ns: green=0, red=1, yellow=0
+875ns: green=0, red=1, yellow=0
+885ns: counter = 2
+895ns: green=0, red=1, yellow=0
+915ns: green=0, red=1, yellow=0
+935ns: green=0, red=1, yellow=0
+955ns: green=0, red=1, yellow=0
+965ns: counter = 2
+975ns: green=0, red=1, yellow=0
+995ns: green=0, red=1, yellow=0

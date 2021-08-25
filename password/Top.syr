@@ -1,0 +1,765 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Top"
+Output Format                      : NGC
+Target Device                      : xc3s200an-4-ftg256
+
+---- Source Options
+Top Module Name                    : Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "set_password.v" in library work
+Compiling verilog file "seg7out_switch.v" in library work
+Module <set_password> compiled
+Compiling verilog file "seg7.v" in library work
+Module <seg7out_switch> compiled
+Compiling verilog file "lights_control.v" in library work
+Module <seg7> compiled
+Compiling verilog file "led_matrix.v" in library work
+Module <lights_control> compiled
+Compiling verilog file "keypad.v" in library work
+Module <led_matrix> compiled
+Compiling verilog file "FSM.v" in library work
+Module <keypad> compiled
+Compiling verilog file "div.v" in library work
+Module <FSM> compiled
+Compiling verilog file "count_down.v" in library work
+Module <div> compiled
+Compiling verilog file "Top.v" in library work
+Module <count_down> compiled
+Module <Top> compiled
+WARNING:HDLCompilers:258 - "FSM.v" line 13 Range on redeclaration of 'inputCnt' overrides range on output declaration at "FSM.v" line 6 
+No errors in compilation
+Analysis of file <"Top.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Top> in library <work>.
+
+Analyzing hierarchy for module <div> in library <work>.
+
+Analyzing hierarchy for module <keypad> in library <work>.
+
+Analyzing hierarchy for module <count_down> in library <work>.
+
+Analyzing hierarchy for module <set_password> in library <work>.
+
+Analyzing hierarchy for module <FSM> in library <work> with parameters.
+	checkInput = "010"
+	checkKey = "011"
+	false = "101"
+	init = "000"
+	true = "100"
+	waitKey = "001"
+
+Analyzing hierarchy for module <lights_control> in library <work>.
+
+Analyzing hierarchy for module <led_matrix> in library <work> with parameters.
+	five = "0101"
+	four = "0100"
+	one = "0001"
+	three = "0011"
+	two = "0010"
+
+Analyzing hierarchy for module <seg7> in library <work>.
+
+Analyzing hierarchy for module <seg7out_switch> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Top>.
+Module <Top> is correct for synthesis.
+ 
+Analyzing module <div> in library <work>.
+Module <div> is correct for synthesis.
+ 
+Analyzing module <keypad> in library <work>.
+Module <keypad> is correct for synthesis.
+ 
+Analyzing module <count_down> in library <work>.
+WARNING:Xst:2325 - "count_down.v" line 16: Unsupported escape sequence : %4.
+WARNING:Xst:2325 - "count_down.v" line 16: Unsupported escape sequence : %4.
+"count_down.v" line 16: $display : %4dns: counter = %4d
+Module <count_down> is correct for synthesis.
+ 
+Analyzing module <set_password> in library <work>.
+INFO:Xst:1433 - Contents of array <pwdStorage> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+WARNING:Xst:2325 - "set_password.v" line 35: Unsupported escape sequence : %4.
+WARNING:Xst:2325 - "set_password.v" line 35: Unsupported escape sequence : %4.
+WARNING:Xst:2325 - "set_password.v" line 35: Unsupported escape sequence : %4.
+WARNING:Xst:2325 - "set_password.v" line 35: Unsupported escape sequence : %4.
+WARNING:Xst:2325 - "set_password.v" line 35: Unsupported escape sequence : %4.
+"set_password.v" line 35: $display : %4dns: pwd0 = %4d, pwd1 = %4d, pwd2 = %4d, pwd3 = %4d
+Module <set_password> is correct for synthesis.
+ 
+Analyzing module <FSM> in library <work>.
+	checkInput = 3'b010
+	checkKey = 3'b011
+	false = 3'b101
+	init = 3'b000
+	true = 3'b100
+	waitKey = 3'b001
+WARNING:Xst:2325 - "FSM.v" line 49: Unsupported escape sequence : %4.
+WARNING:Xst:2325 - "FSM.v" line 49: Unsupported escape sequence : %4.
+"FSM.v" line 49: $display : %4dns: keyCount = %4d
+WARNING:Xst:2325 - "FSM.v" line 59: Unsupported escape sequence : %4.
+WARNING:Xst:2325 - "FSM.v" line 59: Unsupported escape sequence : %4.
+WARNING:Xst:2325 - "FSM.v" line 59: Unsupported escape sequence : %4.
+WARNING:Xst:2325 - "FSM.v" line 59: Unsupported escape sequence : %4.
+WARNING:Xst:2325 - "FSM.v" line 59: Unsupported escape sequence : %4.
+"FSM.v" line 59: $display : %4dns: out0 = %4d, out1 = %4d, out2 = %4d, out3 = %4d
+"FSM.v" line 67: $display : True
+"FSM.v" line 71: $display : False
+WARNING:Xst:2325 - "FSM.v" line 74: Unsupported escape sequence : %4.
+WARNING:Xst:2325 - "FSM.v" line 74: Unsupported escape sequence : %4.
+"FSM.v" line 74: $display : %4dns: inputCnt = %4d
+Module <FSM> is correct for synthesis.
+ 
+Analyzing module <lights_control> in library <work>.
+WARNING:Xst:2325 - "lights_control.v" line 10: Unsupported escape sequence : %4.
+WARNING:Xst:2323 - "lights_control.v" line 10: Parameter 3 is not constant in call of system task $display.
+WARNING:Xst:2323 - "lights_control.v" line 10: Parameter 4 is not constant in call of system task $display.
+WARNING:Xst:2323 - "lights_control.v" line 10: Parameter 5 is not constant in call of system task $display.
+"lights_control.v" line 10: $display : %4dns: green=%d, red=%d, yellow=%d
+WARNING:Xst:2325 - "lights_control.v" line 16: Unsupported escape sequence : %4.
+WARNING:Xst:2323 - "lights_control.v" line 16: Parameter 3 is not constant in call of system task $display.
+WARNING:Xst:2323 - "lights_control.v" line 16: Parameter 4 is not constant in call of system task $display.
+WARNING:Xst:2323 - "lights_control.v" line 16: Parameter 5 is not constant in call of system task $display.
+"lights_control.v" line 16: $display : %4dns: green=%d, red=%d, yellow=%d
+WARNING:Xst:2325 - "lights_control.v" line 22: Unsupported escape sequence : %4.
+WARNING:Xst:2323 - "lights_control.v" line 22: Parameter 3 is not constant in call of system task $display.
+WARNING:Xst:2323 - "lights_control.v" line 22: Parameter 4 is not constant in call of system task $display.
+WARNING:Xst:2323 - "lights_control.v" line 22: Parameter 5 is not constant in call of system task $display.
+"lights_control.v" line 22: $display : %4dns: green=%d, red=%d, yellow=%d
+WARNING:Xst:2325 - "lights_control.v" line 28: Unsupported escape sequence : %4.
+WARNING:Xst:2323 - "lights_control.v" line 28: Parameter 3 is not constant in call of system task $display.
+WARNING:Xst:2323 - "lights_control.v" line 28: Parameter 4 is not constant in call of system task $display.
+WARNING:Xst:2323 - "lights_control.v" line 28: Parameter 5 is not constant in call of system task $display.
+"lights_control.v" line 28: $display : %4dns: green=%d, red=%d, yellow=%d
+Module <lights_control> is correct for synthesis.
+ 
+Analyzing module <led_matrix> in library <work>.
+	five = 4'b0101
+	four = 4'b0100
+	one = 4'b0001
+	three = 4'b0011
+	two = 4'b0010
+Module <led_matrix> is correct for synthesis.
+ 
+Analyzing module <seg7> in library <work>.
+Module <seg7> is correct for synthesis.
+ 
+Analyzing module <seg7out_switch> in library <work>.
+Module <seg7out_switch> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <column> in unit <keypad> has a constant value of 101 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <i> in unit <set_password> has a constant value of 100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <i> in unit <FSM> has a constant value of 100 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <div>.
+    Related source file is "div.v".
+    Found 26-bit up counter for signal <divclkcnt>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <div> synthesized.
+
+
+Synthesizing Unit <keypad>.
+    Related source file is "keypad.v".
+    Found 4-bit register for signal <value>.
+    Found 1-bit register for signal <enable>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+Unit <keypad> synthesized.
+
+
+Synthesizing Unit <count_down>.
+    Related source file is "count_down.v".
+    Found 1-bit register for signal <alarm_enable>.
+    Found 4-bit down counter for signal <cnt_down>.
+    Found 4-bit comparator lessequal for signal <cnt_down$cmp_le0000> created at line 17.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <count_down> synthesized.
+
+
+Synthesizing Unit <set_password>.
+    Related source file is "set_password.v".
+    Found 16-bit register for signal <buffer>.
+    Found 3-bit up counter for signal <count>.
+    Found 16-bit register for signal <pwdStorage>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <set_password> synthesized.
+
+
+Synthesizing Unit <FSM>.
+    Related source file is "FSM.v".
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 14                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | set2                      (positive)           |
+    | Reset              | rst                       (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit up counter for signal <inputCnt>.
+    Found 16-bit register for signal <buffer>.
+    Found 3-bit up counter for signal <keyCount>.
+    Found 4-bit comparator equal for signal <state$cmp_eq0001> created at line 61.
+    Found 4-bit comparator equal for signal <state$cmp_eq0002> created at line 61.
+    Found 4-bit comparator equal for signal <state$cmp_eq0003> created at line 61.
+    Found 4-bit comparator equal for signal <state$cmp_eq0004> created at line 61.
+    Found 3-bit comparator less for signal <state$cmp_lt0000> created at line 53.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 Counter(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+Unit <FSM> synthesized.
+
+
+Synthesizing Unit <lights_control>.
+    Related source file is "lights_control.v".
+    Found 1-bit register for signal <yellow>.
+    Found 1-bit register for signal <green>.
+    Found 1-bit register for signal <red>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <lights_control> synthesized.
+
+
+Synthesizing Unit <led_matrix>.
+    Related source file is "led_matrix.v".
+    Found 8-bit register for signal <row>.
+    Found 4-bit register for signal <state>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <led_matrix> synthesized.
+
+
+Synthesizing Unit <seg7>.
+    Related source file is "seg7.v".
+    Found 16x8-bit ROM for signal <seg7_out>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <seg7> synthesized.
+
+
+Synthesizing Unit <seg7out_switch>.
+    Related source file is "seg7out_switch.v".
+    Found 4-bit register for signal <seg7_selected>.
+Unit <seg7out_switch> synthesized.
+
+
+Synthesizing Unit <Top>.
+    Related source file is "Top.v".
+Unit <Top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Counters                                             : 5
+ 26-bit up counter                                     : 1
+ 3-bit up counter                                      : 3
+ 4-bit down counter                                    : 1
+# Registers                                            : 21
+ 1-bit register                                        : 5
+ 4-bit register                                        : 15
+ 8-bit register                                        : 1
+# Comparators                                          : 6
+ 3-bit comparator less                                 : 1
+ 4-bit comparator equal                                : 4
+ 4-bit comparator lessequal                            : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <FSM_1/state/FSM> on signal <state[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 011
+ 011   | 010
+ 100   | 110
+ 101   | 111
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Counters                                             : 5
+ 26-bit up counter                                     : 1
+ 3-bit up counter                                      : 3
+ 4-bit down counter                                    : 1
+# Registers                                            : 73
+ Flip-Flops                                            : 73
+# Comparators                                          : 6
+ 3-bit comparator less                                 : 1
+ 4-bit comparator equal                                : 4
+ 4-bit comparator lessequal                            : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <count_2> of sequential type is unconnected in block <set_password>.
+WARNING:Xst:2677 - Node <div_1/divclkcnt_3> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <div_1/divclkcnt_4> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <div_1/divclkcnt_5> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <div_1/divclkcnt_6> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <div_1/divclkcnt_7> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <div_1/divclkcnt_8> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <div_1/divclkcnt_9> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <div_1/divclkcnt_10> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <div_1/divclkcnt_11> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <div_1/divclkcnt_12> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <div_1/divclkcnt_13> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <div_1/divclkcnt_14> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <div_1/divclkcnt_15> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <div_1/divclkcnt_16> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <div_1/divclkcnt_17> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <div_1/divclkcnt_18> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <div_1/divclkcnt_19> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <div_1/divclkcnt_20> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <div_1/divclkcnt_21> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <div_1/divclkcnt_22> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <div_1/divclkcnt_23> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <div_1/divclkcnt_24> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <div_1/divclkcnt_25> of sequential type is unconnected in block <Top>.
+
+Optimizing unit <Top> ...
+
+Optimizing unit <keypad> ...
+
+Optimizing unit <count_down> ...
+
+Optimizing unit <set_password> ...
+
+Optimizing unit <FSM> ...
+
+Optimizing unit <led_matrix> ...
+
+Optimizing unit <seg7out_switch> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 5.
+FlipFlop keypad_1/enable has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 92
+ Flip-Flops                                            : 92
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Top.ngr
+Top Level Output File Name         : Top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 48
+
+Cell Usage :
+# BELS                             : 199
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 2
+#      LUT2                        : 14
+#      LUT2_L                      : 1
+#      LUT3                        : 38
+#      LUT3_L                      : 2
+#      LUT4                        : 106
+#      LUT4_D                      : 1
+#      LUT4_L                      : 4
+#      MUXCY                       : 2
+#      MUXF5                       : 18
+#      VCC                         : 1
+#      XORCY                       : 3
+# FlipFlops/Latches                : 92
+#      FDC                         : 15
+#      FDCE                        : 48
+#      FDE                         : 16
+#      FDP                         : 10
+#      FDPE                        : 3
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 47
+#      IBUF                        : 8
+#      OBUF                        : 39
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200anftg256-4 
+
+ Number of Slices:                       98  out of   1792     5%  
+ Number of Slice Flip Flops:             91  out of   3584     2%  
+ Number of 4 input LUTs:                174  out of   3584     4%  
+ Number of IOs:                          48
+ Number of bonded IOBs:                  48  out of    195    24%  
+    IOB Flip Flops:                       1
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)        | Load  |
+-----------------------------------+------------------------------+-------+
+clk                                | BUFGP                        | 3     |
+div_1/divclkcnt_01                 | BUFG                         | 84    |
+div_1/divclkcnt_2                  | NONE(count_down_1/cnt_down_3)| 5     |
+-----------------------------------+------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+----------------------------------------------+------------------------+-------+
+Control Signal                                | Buffer(FF name)        | Load  |
+----------------------------------------------+------------------------+-------+
+FSM_1/rst_inv(set_password_1/rst_inv1_INV_0:O)| NONE(FSM_1/buffer_0_0) | 76    |
+----------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 4.915ns (Maximum Frequency: 203.459MHz)
+   Minimum input arrival time before clock: 4.478ns
+   Maximum output required time after clock: 16.470ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.530ns (frequency: 283.286MHz)
+  Total number of paths / destination ports: 6 / 3
+-------------------------------------------------------------------------
+Delay:               3.530ns (Levels of Logic = 3)
+  Source:            div_1/divclkcnt_1 (FF)
+  Destination:       div_1/divclkcnt_2 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: div_1/divclkcnt_1 to div_1/divclkcnt_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.591   0.563  div_1/divclkcnt_1 (div_1/divclkcnt_1)
+     LUT1:I0->O            1   0.648   0.000  div_1/Mcount_divclkcnt_cy<1>_rt (div_1/Mcount_divclkcnt_cy<1>_rt)
+     MUXCY:S->O            0   0.632   0.000  div_1/Mcount_divclkcnt_cy<1> (div_1/Mcount_divclkcnt_cy<1>)
+     XORCY:CI->O           1   0.844   0.000  div_1/Mcount_divclkcnt_xor<2> (Result<2>)
+     FDC:D                     0.252          div_1/divclkcnt_2
+    ----------------------------------------
+    Total                      3.530ns (2.967ns logic, 0.563ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'div_1/divclkcnt_01'
+  Clock period: 4.915ns (frequency: 203.459MHz)
+  Total number of paths / destination ports: 756 / 139
+-------------------------------------------------------------------------
+Delay:               4.915ns (Levels of Logic = 3)
+  Source:            set_password_1/pwdStorage_1_2 (FF)
+  Destination:       FSM_1/inputCnt_2 (FF)
+  Source Clock:      div_1/divclkcnt_01 rising
+  Destination Clock: div_1/divclkcnt_01 rising
+
+  Data Path: set_password_1/pwdStorage_1_2 to FSM_1/inputCnt_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.591   0.563  set_password_1/pwdStorage_1_2 (set_password_1/pwdStorage_1_2)
+     LUT4:I0->O            1   0.648   0.500  FSM_1/state_FSM_FFd3-In3198 (FSM_1/state_FSM_FFd3-In3198)
+     LUT4:I1->O            2   0.643   0.479  FSM_1/state_FSM_FFd3-In3281 (FSM_1/state_FSM_FFd3-In3281)
+     LUT4:I2->O            3   0.648   0.531  FSM_1/inputCnt_not00011 (FSM_1/inputCnt_not0001)
+     FDCE:CE                   0.312          FSM_1/inputCnt_0
+    ----------------------------------------
+    Total                      4.915ns (2.842ns logic, 2.073ns route)
+                                       (57.8% logic, 42.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'div_1/divclkcnt_2'
+  Clock period: 3.648ns (frequency: 274.123MHz)
+  Total number of paths / destination ports: 30 / 9
+-------------------------------------------------------------------------
+Delay:               3.648ns (Levels of Logic = 2)
+  Source:            count_down_1/cnt_down_3 (FF)
+  Destination:       count_down_1/cnt_down_3 (FF)
+  Source Clock:      div_1/divclkcnt_2 rising
+  Destination Clock: div_1/divclkcnt_2 rising
+
+  Data Path: count_down_1/cnt_down_3 to count_down_1/cnt_down_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.591   0.730  count_down_1/cnt_down_3 (count_down_1/cnt_down_3)
+     LUT4_L:I0->LO         1   0.648   0.132  count_down_1/cnt_down_not0001_SW1 (N86)
+     LUT3:I2->O            4   0.648   0.587  count_down_1/cnt_down_not0001 (count_down_1/cnt_down_not0001)
+     FDPE:CE                   0.312          count_down_1/cnt_down_0
+    ----------------------------------------
+    Total                      3.648ns (2.199ns logic, 1.449ns route)
+                                       (60.3% logic, 39.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'div_1/divclkcnt_01'
+  Total number of paths / destination ports: 119 / 69
+-------------------------------------------------------------------------
+Offset:              4.478ns (Levels of Logic = 3)
+  Source:            set2 (PAD)
+  Destination:       FSM_1/buffer_1_3 (FF)
+  Destination Clock: div_1/divclkcnt_01 rising
+
+  Data Path: set2 to FSM_1/buffer_1_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.849   0.900  set2_IBUF (set2_IBUF)
+     LUT4_D:I0->O          3   0.648   0.534  FSM_1/buffer_3_not00011_SW0 (N78)
+     LUT4:I3->O            4   0.648   0.587  FSM_1/buffer_2_not00011 (FSM_1/buffer_2_not0001)
+     FDCE:CE                   0.312          FSM_1/buffer_2_0
+    ----------------------------------------
+    Total                      4.478ns (2.457ns logic, 2.021ns route)
+                                       (54.9% logic, 45.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'div_1/divclkcnt_2'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              3.909ns (Levels of Logic = 3)
+  Source:            set2 (PAD)
+  Destination:       count_down_1/alarm_enable (FF)
+  Destination Clock: div_1/divclkcnt_2 rising
+
+  Data Path: set2 to count_down_1/alarm_enable
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.849   0.900  set2_IBUF (set2_IBUF)
+     LUT4_L:I0->LO         1   0.648   0.132  count_down_1/alarm_enable_not0001_SW1 (N88)
+     LUT3:I2->O            1   0.648   0.420  count_down_1/alarm_enable_not0001 (count_down_1/alarm_enable_not0001)
+     FDCE:CE                   0.312          count_down_1/alarm_enable
+    ----------------------------------------
+    Total                      3.909ns (2.457ns logic, 1.452ns route)
+                                       (62.9% logic, 37.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'div_1/divclkcnt_01'
+  Total number of paths / destination ports: 2450 / 35
+-------------------------------------------------------------------------
+Offset:              16.470ns (Levels of Logic = 10)
+  Source:            led_matrix_1/row_5 (FF)
+  Destination:       ledcolumn<4> (PAD)
+  Source Clock:      div_1/divclkcnt_01 rising
+
+  Data Path: led_matrix_1/row_5 to ledcolumn<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              9   0.591   0.852  led_matrix_1/row_5 (led_matrix_1/row_5)
+     LUT4:I2->O            3   0.648   0.563  led_matrix_1/column_cmp_eq000311 (led_matrix_1/N13)
+     LUT3:I2->O            6   0.648   0.701  led_matrix_1/column_cmp_eq000411 (led_matrix_1/N29)
+     LUT3:I2->O            3   0.648   0.534  led_matrix_1/column_cmp_eq00051 (led_matrix_1/column_cmp_eq0005)
+     LUT4:I3->O            1   0.648   0.500  led_matrix_1/column<6>1329 (led_matrix_1/column<6>1329)
+     LUT4:I1->O            2   0.643   0.527  led_matrix_1/column<6>1359_SW0 (N92)
+     LUT2:I1->O            1   0.643   0.500  led_matrix_1/column<6>1359 (led_matrix_1/N23)
+     LUT4:I1->O            1   0.643   0.500  led_matrix_1/column<3>48 (led_matrix_1/column<3>48)
+     LUT3:I1->O            2   0.643   0.450  led_matrix_1/column<3>75 (ledcolumn_3_OBUF)
+     LUT4:I3->O            1   0.648   0.420  led_matrix_1/column<4> (ledcolumn_4_OBUF)
+     OBUF:I->O                 4.520          ledcolumn_4_OBUF (ledcolumn<4>)
+    ----------------------------------------
+    Total                     16.470ns (10.923ns logic, 5.547ns route)
+                                       (66.3% logic, 33.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.96 secs
+ 
+--> 
+
+Total memory usage is 4548944 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   59 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+
